@@ -21,4 +21,4 @@ zuul:
 server:
    port: 1111
    servlet:
-      context-path: /petergateway
+      context-path: /petergateway  
