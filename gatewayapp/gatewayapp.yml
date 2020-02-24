@@ -22,5 +22,3 @@ server:
    port: 1111
    servlet:
       context-path: /petergateway
-a:
-   b: aaaaaabbbb
