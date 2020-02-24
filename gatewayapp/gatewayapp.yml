@@ -13,12 +13,14 @@ zuul:
       mate-service:
          path: /mate-service/**
          serviceId: meetapp
-         customSensitiveHeaders: true #为mate-service服务开启cookies传递 默认关闭
+         customSensitiveHeaders: true 
          sensitiveHeaders:            
-      forward-mate-service:           #一旦访问/forward-mate-service会被转发到本网关服务下的/gatewaylocal服务里
+      forward-mate-service:           
          path: /forward-mate-service/**
          url: forward:/gatewaylocal
 server:
    port: 1111
    servlet:
       context-path: /petergateway  
+a:
+   b: aaaaabbbbb 
