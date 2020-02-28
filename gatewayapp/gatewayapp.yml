@@ -4,6 +4,9 @@ zuul:
       error:
          disable: true
    routes:
+      config-service:
+         path: /config-service/**
+         serviceId: configapp
       employee-service:
          path: /employee-service/**
          serviceId: employeeapp
