@@ -26,6 +26,21 @@ server:
    servlet:
       context-path: /petergateway
 
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+hystrix: 
+  command: 
+    default:  
+      execution: 
+        timeout: 
+          enabled: true 
+        isolation: 
+          thread: 
+            timeoutInMilliseconds: 5000 
+
 spring:
     rabbitmq:
        host: 192.168.101.7
