@@ -26,11 +26,14 @@ server:
    servlet:
       context-path: /petergateway
 
+host:
+    socket-timeout-millis: 10000
+    connect-timeout-millis: 10000
 ribbon:
   eureka:
     enabled: true
-  ReadTimeout: 5000
-  ConnectTimeout: 5000
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
 hystrix: 
   command: 
     default:  
@@ -39,7 +42,7 @@ hystrix:
           enabled: true 
         isolation: 
           thread: 
-            timeoutInMilliseconds: 50000 
+            timeoutInMilliseconds: 10000
 
 spring:
     rabbitmq:
