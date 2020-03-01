@@ -26,7 +26,11 @@ server:
    servlet:
       context-path: /petergateway
 
-host:
+zuul:
+  max:
+    host:
+      connections: 500
+  host:
     socket-timeout-millis: 10000
     connect-timeout-millis: 10000
 ribbon:
