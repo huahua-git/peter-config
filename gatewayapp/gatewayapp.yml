@@ -1,4 +1,11 @@
 zuul:
+   ignoredServices: '*'
+   max:
+     host:
+      connections: 500
+   host:
+     socket-timeout-millis: 10000
+     connect-timeout-millis: 10000
    #ignored-patterns: /**/member/**
    SendErrorFilter:
       error:
@@ -25,14 +32,6 @@ server:
    port: 1111
    servlet:
       context-path: /petergateway
-
-zuul:
-  max:
-    host:
-      connections: 500
-  host:
-    socket-timeout-millis: 10000
-    connect-timeout-millis: 10000
 ribbon:
   eureka:
     enabled: true
