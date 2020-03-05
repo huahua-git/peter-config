@@ -53,5 +53,15 @@ spring:
        port: 5672
        username: peter_mq
        password: peter_mq_pwd
-a:
-   b: aabb
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      access-token-uri: http://192.168.101.7:5555/petersecurity/oauth/token
+      user-authorization-uri: http://192.168.101.7:5555/petersecurity/oauth/authorize
+      client-id: peter_client
+      client-secret: peter_secret
+    resource:
+      jwt:
+        key-value: peter_jwt_converter
