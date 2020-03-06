@@ -55,7 +55,7 @@ spring:
        password: peter_mq_pwd
 security:
   basic:
-    enabled: false
+    enabled: true
   oauth2:
     client:
       access-token-uri: http://192.168.101.7:5555/petersecurity/oauth/token
